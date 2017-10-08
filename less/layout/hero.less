@@ -1,0 +1,57 @@
+.hero {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  .hero-body {
+    padding: 3rem 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+
+  &.small {
+    .hero-body {
+      padding-bottom: 1.5rem;
+      padding-top: 1.5rem;
+    }
+  }
+
+  &.medium {
+    .hero-body {
+      .tablet({
+        padding-bottom: 9rem;
+        padding-top: 9rem;
+      })
+    }
+  }
+
+  &.large {
+    .hero-body {
+      .tablet({
+        padding-bottom: 18rem;
+        padding-top: 18rem;
+      })
+    }
+  }
+
+  &.fullheight, &.halfheight {
+    .hero-body {
+      align-items: center;
+      display: flex;
+      & > .container {
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+    }
+  }
+
+  &.fullheight {
+    min-height: 100vh;
+  }
+
+  &.halfheight {
+    min-height: 50vh;
+  }
+}

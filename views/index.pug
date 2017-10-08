@@ -1,0 +1,138 @@
+extends _main.pug
+
+block content
+
+
+  section.hero.fullheight
+    .hero-body
+      .container
+        h1 Nobu
+        h1.subtitle Nobu is a css framework and is a part of the LU-8 Project
+        p Nobu is based on #[a(href="http://bulma.io/") Bulma] and a lot of parts may seem familiar
+        hr
+        p The goal of Nobu is to create a smooth and calm interface to look at. It doesn't confuse you, yet it is unique. 
+        p Nobu is also based around a dark interface, no longer will you burn your eyes away at a white screen.
+
+  section
+    .container
+      h2 Colors
+      p 6 base colors.
+      hr
+      .grid
+        .grid-item: .card.bg-dark: .card-header: h3 Dark
+        .grid-item: .card.bg-primary: .card-header: h3 Primary
+        .grid-item: .card.bg-light: .card-header: h3 Light
+        .grid-item: .card.bg-grey: .card-header: h3 Grey
+        .grid-item: .card.bg-white.c-dark: .card-header: h3 White
+        .grid-item: .card.bg-secondary: .card-header: h3 Secondary
+
+  section
+    .container
+      h2 Grid
+      p Nobu has a simple grid system with flex. Since im not expecting to do anything complicated with this, i will keep it as is.
+      hr
+      .grid
+        .grid-item: .card: .card-header: h3 Item 1
+        .grid-item: .card: .card-header: h3 Item 2
+        .grid-item.grid-half: .card: .card-header: h3 Item 3
+
+  section
+    .container
+      h2 Hero
+      p The banner to any page, put some content in it, introduce your visitors.
+      hr
+  section.hero.bg-secondary
+    .hero-body
+      .container
+        h1 Hero
+        h1.subtitle Normal
+  section.hero.small
+    .hero-body
+      .container
+        h1 Hero
+        h1.subtitle Small
+  section.hero.medium.bg-secondary
+    .hero-body
+      .container
+        h1 Hero
+        h1.subtitle Medium
+  section.hero.large
+    .hero-body
+      .container
+        h1 Hero
+        h1.subtitle Large
+  section.hero.halfheight.bg-secondary
+    .hero-body
+      .container
+        h1 Hero
+        h1.subtitle Halfheight
+  section.hero.fullheight
+    .hero-body
+      .container
+        h1 Hero
+        h1.subtitle Fullheight
+
+  section
+    .container
+      h2 Headings
+      p Titles and subtitles, all stories start with a title, so its important that its eye-catching.
+      hr
+      h1 title
+      h1.subtitle subtitle
+      h2 title
+      h2.subtitle subtitle
+      h3 title
+      h3.subtitle subtitle
+      h4 title
+      h4.subtitle subtitle
+      h5 title
+      h5.subtitle subtitle
+      h6 title
+      h6.subtitle subtitle
+
+  section
+    .container
+      h2 Breadcrumbs
+      p A user might get lost, a trail of breadcrumbs will show the user their way back.
+      hr
+      ul.breadcrumb
+        li: a(href='#') Nobu
+        li: a(href='#') Examples
+        li: a(href='#') Components
+        li: a Breadcrumb
+
+  section
+    .container
+      h2 Cards & Card layout
+      p Cards are a great way to show information in its own little confined space.
+      hr
+      .card-layout
+        .outer-card: .card
+          img(src="http://bulma.io/images/placeholders/1280x960.png")
+          .card-header
+            h1 Title
+            h1.subtitle Subtitle
+          .card-content
+            :marked
+              Yeah some content *goes over here* hm yeah thats pretty good, personally i love card theyre useful for so many things in any application that you build.
+        .outer-card: .card.bg-secondary
+          img(src="http://bulma.io/images/placeholders/1280x960.png")
+          .card-header
+            h1 Title
+          .card-content
+            p Yeah some more content
+        .outer-card: .card
+            .card-header
+              h1 Title
+              h1.subtitle Subtitle
+            img(src="http://bulma.io/images/placeholders/1280x960.png")
+        .outer-card: .card.bg-secondary
+          .card-content
+            p Bleb
+        .outer-card: .card
+          img(src="http://bulma.io/images/placeholders/1280x960.png")
+        .outer-card: .card.bg-secondary
+          .card-header
+            h1 More cards!!!
+          .card-content
+            p Card addiction

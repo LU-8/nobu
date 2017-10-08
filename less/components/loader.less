@@ -1,0 +1,44 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.loader {
+  width: 2.25em;
+  height: 2.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader .rotate {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: @color-white;
+  animation: rotate 1s ease-in-out normal infinite;
+  position: relative;
+  backface-visibility: hidden;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    width: .5em;
+    height: .5em;
+    border-radius: 50%;
+    background-color: #fff;
+    top: .25em;
+  }
+
+  &:before {
+    left: -.6em;
+  }
+
+  &:after {
+    right: -.6em;
+  }
+}

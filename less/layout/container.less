@@ -1,0 +1,24 @@
+@gap: 1rem;
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  
+  width: auto;
+  max-width: @size-widescreen;
+  margin: 0 @gap;
+
+  .widescreen({
+    margin: 0 auto;
+  });
+
+  &.wider {
+    .widescreen({
+      margin: 0 auto;
+      width: 80%;
+      max-width: none;
+      min-width: @size-widescreen;
+    })
+  }
+
+}

@@ -1,0 +1,35 @@
+@import 'variables';
+
+@import 'elements/_all';
+@import 'components/_all';
+@import 'layout/_all';
+
+body {
+  background-color: @body-color;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  min-width: 300px;
+  //overflow-x: hidden;
+  overflow-y: scroll;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: @color-white;
+}
+
+.bg-secondary { background-color: @color-secondary; }
+.bg-white { background-color: @color-white; }
+.bg-grey { background-color: @color-grey; }
+.bg-primary { background-color: @color-primary; }
+.bg-light { background-color: @color-light; }
+.bg-dark { background-color: @color-dark; }
+
+.c-secondary { color: @color-secondary; }
+.c-white { color: @color-white; }
+.c-grey { color: @color-grey; }
+.c-primary { color: @color-primary; }
+.c-light { color: @color-light; }
+.c-dark { color: @color-dark; }

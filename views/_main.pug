@@ -1,0 +1,23 @@
+doctype
+
+include _util.pug
+
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title= (attr && attr.title ? attr.title + ' | ' : '') + 'lu-present'
+
+    +style('https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css')
+
+    +style('/static/css/style.css')
+
+    block head
+
+  body
+    block content
+
+  block after
+
+  +style('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i')
+  +style("https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i")

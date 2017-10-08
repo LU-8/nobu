@@ -1,0 +1,90 @@
+@heading-size: 1em;
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 1.5em;
+  &:not(:first-child) {
+    margin-top: 0.5em;
+  }
+
+  &.subtitle {
+    margin-top: -1.5em;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+}
+
+h1 {
+  font-size: (1em + @heading-size);
+  &.subtitle {
+    font-size: (.8em + @heading-size);
+  }
+}
+
+h2 {
+  font-size: (1em + @heading-size / 6 * 5);
+  &.subtitle {
+    font-size: (.8em + @heading-size / 6 * 5);
+  }
+}
+
+h3 {
+  font-size: (1em + @heading-size / 6 * 4);
+  &.subtitle {
+    font-size: (.8em + @heading-size / 6 * 4);
+  }
+}
+
+h4 {
+  font-size: (1em + @heading-size / 6 * 3);
+  &.subtitle {
+    font-size: (.8em + @heading-size / 6 * 3);
+  }
+}
+
+h5 {
+  font-size: (1em + @heading-size / 6 * 2);
+  &.subtitle {
+    font-size: (.8em + @heading-size / 6 * 2);
+  }
+}
+
+h6 {
+  font-size: (1em + @heading-size / 6);
+  &.subtitle {
+    font-size: (.8em + @heading-size / 6);
+  }
+}
+
+p {
+  font-size: 1em;
+}
+
+pre, code {
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+hr {
+  height: 1px;
+  background: @color-light;
+  border: none;
+  display: block;
+  margin: 1.5rem 0;
+}
+
+p {
+  &:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}
+
+a {
+  color: @color-secondary;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color .2s linear;
+
+  &:hover, &:focus {
+    color: lighten(@color-secondary, 20%);
+  }
+}

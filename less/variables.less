@@ -1,0 +1,35 @@
+
+// COLORS
+
+@color-secondary: #8f72da;
+@color-white: #FFF;
+@color-grey: #99AAB5;
+
+@color-primary: #2C2F33;
+@color-light: lighten(@color-primary, 5%);
+@color-dark: darken(@color-primary, 5%); //#23272A;
+
+@body-color: @color-primary;
+
+// SCREEN SIZES
+
+@size-widescreen: 1344px;
+@size-desktop: 1024px;
+@size-tablet: 760px;
+@size-phone: 430px;
+
+.phone(@rules) {
+  @media screen and (max-width: @size-tablet) { @rules(); };
+}
+
+.tablet(@rules) {
+  @media screen and (min-width: (@size-tablet)) { @rules(); };
+}
+
+.desktop(@rules) {
+  @media screen and (min-width: (@size-desktop)) { @rules(); };
+}
+
+.widescreen(@rules, @add: 0px) {
+  @media screen and (min-width: (@size-widescreen)) { @rules(); };
+}

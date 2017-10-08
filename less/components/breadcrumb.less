@@ -1,0 +1,40 @@
+ul.breadcrumb {
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+
+  li {
+    display: flex;
+    align-items: center;
+
+    &:first-child a {
+      padding-left: 0;
+    }
+
+    &:not(:first-child)::before {
+      content: "\0002f";
+      color: @color-grey;
+    }
+
+    &:not(:last-child) a {
+      color: @color-grey;
+      transition: color .2s linear;      
+
+      &:focus, &:hover {
+        color: lighten(@color-grey, 20%);
+      }
+    }
+
+    &:last-child a {
+      pointer-events: none;
+    }
+
+    a {
+      padding: .5em .75em;
+  
+      text-decoration: none;
+    }
+  }
+}

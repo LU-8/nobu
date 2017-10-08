@@ -1,0 +1,16 @@
+@section-padding: 1rem .5rem;
+@section-padding-tablet: 1.5rem 1rem;
+@section-padding-desktop: 2rem 1.5rem;
+
+section {
+  padding: @section-padding;
+
+  .tablet({
+    padding: @section-padding-tablet;
+  });
+
+  .desktop({
+    padding: @section-padding-desktop;
+  })
+}
+
