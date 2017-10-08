@@ -1,19 +1,27 @@
 extends _main.pug
 
 block content
-
+  style.
+    #title {
+      animation: slideDown 500ms both;
+    }
+    #goal {
+      animation: slideDown 500ms both;
+      animation-delay: .2s;
+    }
+    #git {
+      animation: slideDown 500ms both;
+      animation-delay: .4s;
+    }
+    
 
   section.hero.fullheight
     .hero-body
       .container
-        h1 Nobu
-        h1.subtitle Nobu is a CSS framework and is a part of the LU-8 Project
-        p Nobu is based on #[a(href="http://bulma.io/") Bulma] and a lot of parts may seem familiar
-        hr
-        p The goal of Nobu is to create a smooth and calm interface to look at. It doesn't confuse you, yet it is unique. 
-        p Nobu is also based around a dark interface, no longer will you burn your eyes away at a white screen.
-        hr
-        p This project is open-source and you can fork it on #[a(href="https://github.com/LU-8/nobu") Github]!
+        h1#title Nobu
+        p#goal The goal of Nobu is to create a smooth and calm interface to look at. It doesn't confuse you, yet it is unique. 
+        hr#goal
+        p#git This project is open-source and you can fork it on #[a(href="https://github.com/LU-8/nobu") Github]!
 
   section
     .container
@@ -21,12 +29,26 @@ block content
       p 6 base colors.
       hr
       .grid
-        .grid-item: .card.bg-dark: .card-header: h3 Dark
-        .grid-item: .card.bg-primary: .card-header: h3 Primary
-        .grid-item: .card.bg-light: .card-header: h3 Light
-        .grid-item: .card.bg-grey: .card-header: h3 Grey
-        .grid-item: .card.bg-white.c-dark: .card-header: h3 White
-        .grid-item: .card.bg-secondary: .card-header: h3 Secondary
+        .grid-item: .card.bg-dark: .card-header
+          h3 Dark
+          p #202225
+
+        .grid-item: .card.bg-primary: .card-header
+          h3 Primary
+          p #2C2F33
+        .grid-item: .card.bg-light: .card-header
+          h3 Light
+          p #383C41
+      .grid
+        .grid-item: .card.bg-grey: .card-header
+          h3 Grey
+          p #99AAB5
+        .grid-item: .card.bg-white.c-dark: .card-header
+          h3 White
+          p #FFF
+        .grid-item: .card.bg-secondary.c-dark: .card-header
+          h3 Secondary
+          p #8F72DA
 
   section
     .container
