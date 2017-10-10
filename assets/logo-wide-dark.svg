@@ -1,0 +1,60 @@
+<svg width="310" height="100" xmlns="http://www.w3.org/2000/svg">
+  <path d="
+      M 30,25
+      l 0,45
+      l 40,-40 
+      l 0,45
+
+      M140,30
+      l -20,0
+      q -20,0 -20,20
+      l 0,20
+      l 20,0
+      q 20,0 20,-20
+      Z
+
+      M 170,30
+      l 0,40
+      l 30,0
+      a 1,1 0 0 0 0,-20
+      a 1,1 0 0 0 0,-20
+      l -30,0
+      Z
+      M 200,50
+      l -10,0
+
+      M 240,25
+      l 0,25
+      a 1,1 0 0 0 40,0
+      l 0,-25
+    " fill="transparent" stroke="#000" stroke-width="10" stroke-linejoin="miter" stroke-linecap="butt"/>
+<!--
+    <path d="
+        M 0,30
+        l 310,0
+        M 0,25
+        l 310,0
+
+        M 0,70
+        l 310,0
+        M 0,75
+        l 310,0
+      "
+       fill="transparent" stroke="red" stroke-width="1" />
+-->
+    <!-- first box 
+    <path d="M30,30 L70,30 L70,70 L30,70 Z"
+       fill="transparent" stroke="red" stroke-width="2" /> -->
+
+    <!-- second box 
+    <path d="M100,30 L140,30 L140,70 L100,70 Z"
+       fill="transparent" stroke="red" stroke-width="2" /> -->
+
+    <!-- third box 
+    <path d="M170,30 L210,30 L210,70 L170,70 Z"
+       fill="transparent" stroke="red" stroke-width="1" /> --> 
+
+    <!-- fourth box 
+    <path d="M240,30 L280,30 L280,70 L240,70 Z"
+       fill="transparent" stroke="red" stroke-width="2" /> -->
+</svg>

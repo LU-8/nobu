@@ -1,4 +1,4 @@
-![Nobu](./assets/logo-wide.svg)
+![Nobu](./assets/logo-wide-dark.svg)
 
 A CSS framework based on [Bulma](http://bulma.io)
 
