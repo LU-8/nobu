@@ -13,18 +13,18 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "dotenv": "^4.0.0",
-    "express": "^4.16.1",
-    "helmet": "^3.8.2",
-    "jstransformer-marked": "^1.0.2",
-    "pug": "^2.0.0-rc.4"
-  },
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^7.1.5",
     "cssnano": "^3.10.0",
     "less": "^2.7.2",
     "postcss-cli": "^4.1.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.1",
+    "helmet": "^3.8.2",
+    "jstransformer-escape-html": "^1.0.0",
+    "jstransformer-marked": "^1.0.2",
+    "pug": "^2.0.0-rc.4"
   }
 }
