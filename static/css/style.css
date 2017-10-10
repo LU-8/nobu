@@ -18,6 +18,80 @@
     transform: scale(1);
   }
 }
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+img,
+embed,
+iframe,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+}
+iframe {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+  text-align: left;
+}
 h1,
 h2,
 h3,
@@ -90,7 +164,7 @@ code {
 }
 hr {
   height: 1px;
-  background: #383c41;
+  background: #383C41;
   border: none;
   display: block;
   margin: 1.5rem 0;
@@ -99,7 +173,7 @@ p:not(:last-child) {
   margin-bottom: 1em;
 }
 a {
-  color: #8f72da;
+  color: #8F72DA;
   cursor: pointer;
   text-decoration: none;
   transition: color .2s linear;
@@ -134,7 +208,7 @@ a:focus {
 .card {
   transition: all .25s;
   transform: translateY(0);
-  background-color: #383c41;
+  background-color: #383C41;
   height: auto;
   box-shadow: 0 2px 2px #202225;
   border-radius: 5px;
@@ -397,7 +471,7 @@ body {
   color: #FFF;
 }
 .bg-secondary {
-  background-color: #8f72da;
+  background-color: #8F72DA;
 }
 .bg-white {
   background-color: #FFF;
@@ -409,13 +483,13 @@ body {
   background-color: #2C2F33;
 }
 .bg-light {
-  background-color: #383c41;
+  background-color: #383C41;
 }
 .bg-dark {
   background-color: #202225;
 }
 .c-secondary {
-  color: #8f72da;
+  color: #8F72DA;
 }
 .c-white {
   color: #FFF;
@@ -427,7 +501,7 @@ body {
   color: #2C2F33;
 }
 .c-light {
-  color: #383c41;
+  color: #383C41;
 }
 .c-dark {
   color: #202225;
