@@ -5,10 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build-clean && npm run build-less",
-    "build-watch": "watch -p 'less/**/*.less' -c 'npm run build'",
+    "build": "npm run build-clean && npm run build-less && npm run build-post",
     "build-clean": "rimraf static/css/",
-    "build-less": "lessc less/main.less static/css/style.css --source-map"
+    "build-less": "lessc less/main.less static/css/style.css --source-map",
+    "build-post": "postcss --use autoprefixer --map false --output static/css/style.css static/css/style.css"
   },
   "author": "",
   "license": "MIT",
@@ -20,8 +20,9 @@
     "pug": "^2.0.0-rc.4"
   },
   "devDependencies": {
+    "autoprefixer": "^7.1.5",
     "less": "^2.7.2",
-    "rimraf": "^2.6.2",
-    "watch-cli": "^0.2.2"
+    "postcss-cli": "^4.1.1",
+    "rimraf": "^2.6.2"
   }
 }
