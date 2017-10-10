@@ -6,6 +6,7 @@ let path = require('path')
 let app = express()
 
 app.use(require('helmet')())
+app.use(require('compression')())
 
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')

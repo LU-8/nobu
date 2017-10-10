@@ -7,24 +7,25 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build-clean && npm run build-less && npm run build-post && npm run build-min",
     "build-clean": "rimraf css/",
-    "build-less": "lessc less/main.less css/nobu.css --source-map",
-    "build-post": "postcss --use autoprefixer --map false --output css/nobu.css css/nobu.css",
-    "build-min": "postcss --use cssnano --map false --output css/nobu.min.css css/nobu.css"
+    "build-less": "lessc less/main.less css/nobu.css",
+    "build-post": "postcss --use autoprefixer --output css/nobu.css css/nobu.css",
+    "build-min": "postcss --use cssnano --output css/nobu.min.css css/nobu.css"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^7.1.5",
+    "compression": "^1.7.1",
     "cssnano": "^3.10.0",
-    "less": "^2.7.2",
-    "postcss-cli": "^4.1.1",
-    "rimraf": "^2.6.2",
     "dotenv": "^4.0.0",
     "express": "^4.16.1",
     "helmet": "^3.8.2",
     "jstransformer-escape-html": "^1.0.0",
     "jstransformer-marked": "^1.0.2",
-    "pug": "^2.0.0-rc.4"
+    "less": "^2.7.2",
+    "postcss-cli": "^4.1.1",
+    "pug": "^2.0.0-rc.4",
+    "rimraf": "^2.6.2"
   }
 }

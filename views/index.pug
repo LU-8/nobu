@@ -2,6 +2,17 @@ extends _main.pug
 
 block content
   style.
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0)
+      }
+    }
+
     #title {
       animation: slideDown 500ms both;
       width: 310;
