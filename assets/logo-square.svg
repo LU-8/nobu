@@ -1,4 +1,8 @@
 <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
-  <path d="M 30,30 l 0,50 l 40,-60 l 0,50" 
+  <path d="
+      M 30,30 
+      l 0,40
+      l 40,-40 
+      l 0,40" 
     fill="transparent" stroke="#fff" stroke-width="10" stroke-linejoin="miter" stroke-linecap="round"/>
 </svg>

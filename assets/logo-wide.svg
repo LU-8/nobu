@@ -1,22 +1,36 @@
 <svg width="310" height="100" xmlns="http://www.w3.org/2000/svg">
-  <path d="
-      M 30,30 
-      l 0,50
-      l 40,-60 
-      l 0,50
-
+  <!--
       M 120,30
       a 1,1 0 0 1 0,40
       a 1,1 0 0 1 0,-40
+      -->
+
+  <path d="
+      M 30,30 
+      l 0,40
+      l 40,-40 
+      l 0,40
+
+      M140,30
+      l -20,0
+      q -20,0 -20,20
+      l 0,20
+      l 20,0
+      q 20,0 20,-20
+      Z
 
       M 170,30
       l 0,40
       l 30,0
-      a 1,1 0 0 0 0,-23
-      l -10,0
-      m 10,0
-      a 1,1 0 0 0 0,-17
+      a 1,1 0 0 0 0,-20
+      a 1,1 0 0 0 0,-20
       l -30,0
+      Z
+      M 200,50
+      l -10,0
+
+      
+
 
       M 240,30
       l 0,20
@@ -35,7 +49,7 @@
 
     <!-- third box 
     <path d="M170,30 L210,30 L210,70 L170,70 Z"
-       fill="transparent" stroke="red" stroke-width="1" /> -->
+       fill="transparent" stroke="red" stroke-width="1" /> --> 
 
     <!-- fourth box 
     <path d="M240,30 L280,30 L280,70 L240,70 Z"
