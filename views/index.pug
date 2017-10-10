@@ -27,6 +27,7 @@ block content
     .container
       h2 Colors
       p 6 base colors.
+        
       hr
       .grid
         .grid-item: .card.bg-dark: .card-header
@@ -53,6 +54,11 @@ block content
     .container
       h2 Grid
       p Nobu has a simple grid system with flex. Since im not expecting to do anything complicated with this, i will keep it as is.
+      pre: code(class='html')
+        :escape-html
+          <div class="grid">
+            <div class="grid-item"></div>
+          </div class="grid">
       hr
       .grid
         .grid-item: .card: .card-header: h3 Item 1
@@ -63,6 +69,19 @@ block content
     .container
       h2 Hero
       p The banner to any page, put some content in it, introduce your visitors.
+      pre: code(class="html")
+        :escape-html
+          <section class="hero">
+            <div class="hero-body">
+              <h1>Hero<h1>
+            </div>
+          </section>
+
+          <section class="hero small"></section>
+          <section class="hero medium"></section>
+          <section class="hero big"></section>
+          <section class="hero halfheight"></section>
+          <section class="hero fullheight"></section>
       hr
   section.hero.bg-secondary
     .hero-body
@@ -99,6 +118,10 @@ block content
     .container
       h2 Headings
       p Titles and subtitles, all stories start with a title, so its important that its eye-catching.
+      pre: code(class="html")
+        :escape-html
+          <h1>Title</h1>
+          <h1 class="subtitle">Subtitle</h1>
       hr
       h1 title
       h1.subtitle subtitle
@@ -117,6 +140,14 @@ block content
     .container
       h2 Breadcrumbs
       p A user might get lost, a trail of breadcrumbs will show the user their way back.
+      pre: code(class="html")
+        :escape-html
+          <ul class="breadcrumb">
+            <li><a href='#'>Nobu</a></li>
+            <li><a href='#'>Examples</a></li>
+            <li><a href='#'>Components</a></li>
+            <li><a>Breadcrumb</a></li>
+          </ul>
       hr
       ul.breadcrumb
         li: a(href='#') Nobu
@@ -128,6 +159,33 @@ block content
     .container
       h2 Cards & Card layout
       p Cards are a great way to show information in its own little confined space.
+      pre: code(class="html")
+        :escape-html
+          <div class="card">
+            <img src="">
+            <div class="card-header">
+              <h1>Title</h1>
+              <h1 class="subtitle">Subtitle</h1>
+            </div>
+            <div class="card-content">
+              <p>Some content here</p>
+            </div>
+          </div>
+      p.
+        A #[code .card-layout] will create a grid container with a few columns to combine cards. Together with surrounding your cards with #[code .outer-card] to fix the height. 
+      pre: code(class='html')
+        :escape-html
+          <div class="card-layout">
+            <div class="outer-card">
+              <div class="card">...</div>
+            </div>
+            <div class="outer-card">
+              <div class="card">...</div>
+            </div>
+            <div class="outer-card">
+              <div class="card">...</div>
+            </div>
+          </div>
       hr
       .card-layout
         .outer-card: .card

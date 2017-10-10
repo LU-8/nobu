@@ -14,6 +14,8 @@ html(lang="en")
 
     //+style('https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css')
 
+    +style("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css")
+    
     +style('css/nobu.css')
 
     block head
@@ -25,3 +27,5 @@ html(lang="en")
 
   +style('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i')
   +style("https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i")
+  script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js")
+  script hljs.initHighlightingOnLoad();
