@@ -1,0 +1,49 @@
+<svg width="400" height="100" xmlns="http://www.w3.org/2000/svg">
+  <!--
+  width: 40
+  height: 40
+  
+  -->
+
+  <path d="
+      M 30,30 
+      l 0,50
+      l 40,-60 
+      l 0,50
+
+      M 120,30
+      a 1,1 0 0 1 0,40
+      a 1,1 0 0 1 0,-40
+
+      M 170,30
+      l 0,40
+      l 30,0
+      a 1,1 0 0 0 0,-23
+      l -10,0
+      m 10,0
+      a 1,1 0 0 0 0,-17
+      l -30,0
+
+      M 240,30
+      l 0,20
+      a 1,1 0 0 0 40,0
+      l 0,-20
+    " 
+    fill="transparent" stroke="#fff" stroke-width="10" stroke-linejoin="miter" stroke-linecap="round"/>
+
+    <!-- first box 
+    <path d="M30,30 L70,30 L70,70 L30,70 Z"
+       fill="transparent" stroke="red" stroke-width="2" /> -->
+
+    <!-- second box 
+    <path d="M100,30 L140,30 L140,70 L100,70 Z"
+       fill="transparent" stroke="red" stroke-width="2" /> -->
+
+    <!-- third box 
+    <path d="M170,30 L210,30 L210,70 L170,70 Z"
+       fill="transparent" stroke="red" stroke-width="1" /> -->
+
+    <!-- fourth box 
+    <path d="M240,30 L280,30 L280,70 L240,70 Z"
+       fill="transparent" stroke="red" stroke-width="2" /> -->
+</svg>
