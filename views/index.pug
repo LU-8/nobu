@@ -4,6 +4,18 @@ block content
   style.
     #title {
       animation: slideDown 500ms both;
+      width: 310;
+      height: 100;
+      display: block;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    #title img {
+      display: block;
+      height: auto;
+      width: auto;
+      max-width: 100%;
     }
     #goal {
       animation: slideDown 500ms both;
@@ -18,7 +30,7 @@ block content
   section.hero.fullheight
     .hero-body
       .container
-        h1#title Nobu
+        figure#title: img(src="assets/logo-wide.svg")
         p#goal The goal of Nobu is to create a smooth and calm interface to look at. It doesn't confuse you, yet it is unique. 
         hr#goal
         p#git This project is open-source and you can fork it on #[a(href="https://github.com/LU-8/nobu") Github]!

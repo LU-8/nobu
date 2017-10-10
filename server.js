@@ -11,6 +11,7 @@ app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
 
 app.use('/css', express.static(path.join(__dirname, 'css')))
+app.use('/assets', express.static(path.join(__dirname, 'assets')))
 
 require('./routes')(app)
 
