@@ -25,8 +25,9 @@
 
       M 240,25
       l 0,25
-      a 1,1 0 0 0 40,0
-      l 0,-25
+      q 0,20 20,20
+      l 20,0
+      l 0,-45
     " fill="transparent" stroke="#fff" stroke-width="10" stroke-linejoin="miter" stroke-linecap="butt"/>
 <!--
     <path d="
