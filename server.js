@@ -10,7 +10,7 @@ app.use(require('helmet')())
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'pug')
 
-app.use('/static', express.static(path.join(__dirname, 'static')))
+app.use('/css', express.static(path.join(__dirname, 'css')))
 
 require('./routes')(app)
 

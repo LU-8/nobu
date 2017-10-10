@@ -5,10 +5,11 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build-clean && npm run build-less && npm run build-post",
-    "build-clean": "rimraf static/css/",
-    "build-less": "lessc less/main.less static/css/style.css --source-map",
-    "build-post": "postcss --use autoprefixer --map false --output static/css/style.css static/css/style.css"
+    "build": "npm run build-clean && npm run build-less && npm run build-post && npm run build-min",
+    "build-clean": "rimraf css/",
+    "build-less": "lessc less/main.less css/nobu.css --source-map",
+    "build-post": "postcss --use autoprefixer --map false --output css/nobu.css css/nobu.css",
+    "build-min": "postcss --use cssnano --map false --output css/nobu.min.css css/nobu.css"
   },
   "author": "",
   "license": "MIT",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^7.1.5",
+    "cssnano": "^3.10.0",
     "less": "^2.7.2",
     "postcss-cli": "^4.1.1",
     "rimraf": "^2.6.2"
