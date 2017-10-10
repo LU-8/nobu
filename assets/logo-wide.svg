@@ -6,10 +6,10 @@
       -->
 
   <path d="
-      M 30,30 
-      l 0,40
+      M 30,25
+      l 0,45
       l 40,-40 
-      l 0,40
+      l 0,45
 
       M140,30
       l -20,0
@@ -32,13 +32,28 @@
       
 
 
-      M 240,30
-      l 0,20
+      M 240,25
+      l 0,25
       a 1,1 0 0 0 40,0
-      l 0,-20
-    " 
-    fill="transparent" stroke="#fff" stroke-width="10" stroke-linejoin="miter" stroke-linecap="round"/>
+      l 0,-25
 
+      
+    " 
+    fill="transparent" stroke="#fff" stroke-width="10" stroke-linejoin="miter" stroke-linecap="butt"/>
+<!--
+    <path d="
+        M 0,30
+        l 310,0
+        M 0,25
+        l 310,0
+
+        M 0,70
+        l 310,0
+        M 0,75
+        l 310,0
+      "
+       fill="transparent" stroke="red" stroke-width="1" />
+-->
     <!-- first box 
     <path d="M30,30 L70,30 L70,70 L30,70 Z"
        fill="transparent" stroke="red" stroke-width="2" /> -->
