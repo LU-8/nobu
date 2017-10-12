@@ -240,3 +240,27 @@ block content
             h1 More cards!!!
           .card-content
             p Card addiction
+  section
+    .container
+      h2 Box & Box layout
+      p Boxes are an extension to cards.
+      pre: code(class="html")
+        :escape-html
+          <div class="box">
+            ...
+          </div>
+      hr
+      .box-layout
+        .outer-box: .box
+          //img(src="" alt="")
+          .box-content
+            code handy for some code maybe?
+        .outer-box: .box
+          .box-header
+            h3 Something else?
+        .outer-box: .box
+          //img(src="" alt="")
+          .box-header
+            h3 The sky is the limit.
+          .box-content
+            p Maybe not, you get the point.

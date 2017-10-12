@@ -1,0 +1,36 @@
+.box-layout { &:extend(.card-layout); }
+.outer-box { &:extend(.outer-card); }
+
+.box {
+  background-color: @color-light;
+  box-shadow: inset 0 0 4px #222;
+  height: auto;
+}
+
+.box-header { 
+  padding: 1em;
+  &:not(:last-child) {
+    padding-bottom: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+
+    &.subtitle {
+      margin-top: 0;
+    }
+  }
+}
+.box-content { 
+  padding: 1em;
+  &:not(:last-child) {
+    padding-bottom: 0;
+  }
+}
+.box img, .box-image { 
+  width: 100%;
+  
+  &:not(:first-child) {
+    padding-top: 1em;
+  }
+}
