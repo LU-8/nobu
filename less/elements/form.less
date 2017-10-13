@@ -36,9 +36,10 @@
     &.warning { border-color: @color-orange; }
     &.error { border-color: @color-red; }
     &.info { border-color: @color-blue; }
-    &[placeholder] { color: fade(@color-white, 30%); }
+    &:placeholder { color: fade(@color-white, 30%); }
+    // autoprefixer doesnt fix this, should create own solution
 
-    &[disabled] {
+    &:disabled {
       @disabled-color: mix(@color-light, @color-primary);
       background-color: @disabled-color;
     }
