@@ -19,55 +19,41 @@
     text-align: left;
   }
 
-  input {
+  input, textarea {
     background-color: @color-light;
     color: @color-white;
     border: 1px solid @color-dark;
-
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1rem;
     color: @color-white;
-
     padding: .5em;
-
     display: block;
     max-width: 100%;
     width: 100%;
 
-    &.success {
-      border-color: @color-green;
-    }
-
-    &.warning {
-      border-color: @color-orange;
-    }
-
-    &.error {
-      border-color: @color-red;
-    }
-
-    &.info {
-      border-color: @color-blue;
-    }
-
-    &[placeholder] {
-      color: fade(@color-white, 30%);
-    }
+    &.success { border-color: @color-green; }
+    &.warning { border-color: @color-orange; }
+    &.error { border-color: @color-red; }
+    &.info { border-color: @color-blue; }
+    &[placeholder] { color: fade(@color-white, 30%); }
 
     &[disabled] {
       @disabled-color: mix(@color-light, @color-primary);
-
       background-color: @disabled-color;
     }
+  }
+
+  textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 120px;
+    resize: vertical;
   }
 
   p.message {
     margin-top: .25em;
     font-size: .75em;
   }
-
-
-
 }
 

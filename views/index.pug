@@ -272,30 +272,40 @@ block content
       hr
       .grid
         .grid-item
+          h3 Text input
           .group
-            label Name
+            label Label
             input(type='text' placeholder='Text input')
           .group
-            label Name
+            label Label
             input(disabled type='text' placeholder='Text input')
             p.message Disabled
           .group
-            label Name
+            label Label
             input.info(type='text' placeholder='Text input')
             p.message Info message
           .group
-            label Name
+            label Label
             input.success(type='text' placeholder='Text input')
             p.message Success message
           .group
-            label Name
+            label Label
             input.warning(type='text' placeholder='Text input')
             p.message Warning message
           .group
-            label Name
+            label Label
             input.error(type='text' placeholder='Text input')
             p.message Error message
         
         .grid-item
+          h3 Text area
+          .group
+            label Label
+            textarea
+            p.message Message?
+          .group
+            label Label
+            textarea(disabled)
+            p.message Nope
 
         .grid-item
