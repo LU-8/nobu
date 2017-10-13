@@ -1,0 +1,73 @@
+.group {
+  &:not(:last-child) {
+    margin-bottom: .75em;
+  }
+
+  label {
+    display: block;
+
+    font-weight: bold;
+
+    &:not(:last-child) {
+      margin-bottom: .5em;
+    }
+  }
+
+  .control {
+    position: relative;
+    float: left;
+    text-align: left;
+  }
+
+  input {
+    background-color: @color-light;
+    color: @color-white;
+    border: 1px solid @color-dark;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: @color-white;
+
+    padding: .5em;
+
+    display: block;
+    max-width: 100%;
+    width: 100%;
+
+    &.success {
+      border-color: @color-green;
+    }
+
+    &.warning {
+      border-color: @color-orange;
+    }
+
+    &.error {
+      border-color: @color-red;
+    }
+
+    &.info {
+      border-color: @color-blue;
+    }
+
+    &[placeholder] {
+      color: fade(@color-white, 30%);
+    }
+
+    &[disabled] {
+      @disabled-color: mix(@color-light, @color-primary);
+
+      background-color: @disabled-color;
+    }
+  }
+
+  p.message {
+    margin-top: .25em;
+    font-size: .75em;
+  }
+
+
+
+}
+
